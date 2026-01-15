@@ -6,6 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
+	<!-- 🔹 NuGet Packages -->
 	<ItemGroup>
 		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
 		<PackageReference Include="FluentValidation" Version="12.1.1" />
@@ -16,11 +17,12 @@
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
 
+	<!-- 🔹 Project References (CRITICAL) -->
 	<ItemGroup>
+		<ProjectReference Include="..\ExpenseManagement.Domain\ExpenseManagement.Domain.csproj" />
 		<ProjectReference Include="..\ExpenseManagement.Application\ExpenseManagement.Application.csproj" />
 		<ProjectReference Include="..\ExpenseManagement.Infrastructure\ExpenseManagement.Infrastructure.csproj" />
 	</ItemGroup>
